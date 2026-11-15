@@ -1,0 +1,12 @@
+<!doctype html><html lang="zh-Hant"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>零測集｜線上腦海</title><link rel="stylesheet" href="../style.css"><main><nav><a href="../index.html">線上腦海 · 筆記索引</a></nav>
+<h1>零測集</h1>
+<p>為什麼每個非空開區間裡都有有理數，但整個有理數集的 Lebesgue 測度卻是零？</p>
+<h2>概念</h2>
+<p>在實線上，若對每個 ε &gt; 0，都能用可數個開區間覆蓋 E ⊆ ℝ，且這些區間的長度總和小於 ε，就稱 E 為 Lebesgue 零測集。這表示 E 的外測度為零；由 Carathéodory 判準，E 可測，因此它的 Lebesgue 測度也是零。</p>
+<h2>例題</h2>
+<p>有理數集 ℚ 在實線上稠密：每個非空開區間都至少含有一個有理數。這句話告訴我們在哪裡可以找到有理數，卻沒有給出覆蓋這些點所需的總長度。</p>
+<p>因為 ℚ 可數，可以把所有有理數列成 q₁, q₂, q₃, …。任給 ε &gt; 0，以第 n 個有理數為中心，取一個長度為 ε/2ⁿ⁺¹ 的開區間（n 從 1 開始）。每個有理數都被自己的區間蓋住。</p>
+<p>這些長度加起來是 ε/4 + ε/8 + ε/16 + ⋯ = ε/2，小於 ε。於是 0 ≤ m*(ℚ) ≤ ε/2。由於 ε 可以任意小，m*(ℚ) = 0，故 m(ℚ) = 0。即使這些區間的聯集碰到每個非空開區間，它的測度仍至多是 ε/2。</p>
+<h2>下一步</h2>
+<p>想核對從「外測度為零」到「可測」的那一步，可讀 <a href="caratheodory.html">Carathéodory 可測性</a> 的切割等式。再讀 <a href="lebesgue-measure.html">Lebesgue 測度</a>，也可以把 ℚ 寫成可數個互斥單點的聯集，用可數可加性驗算。</p>
+</main></html>
